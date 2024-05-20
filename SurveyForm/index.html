@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Self Learn Survey form</h1>
+    <p id="description">Please take some time to fill this form</p>
+    <form id="survey-form">
+      <div class="basicInfo">
+      <label id="name-label" for="name">Name: <input id="name" name="name" required type="text" placeholder="Enter your name" class="inp"/></label>
+      <label id="email-label" for="email">Email Id: <input id="email" name="email" required type="email"class="inp"placeholder="Enter your email address"/></label>
+      <label id="number-label" for="number"> Age(Optional): <input id="number" type="number" min="18" max = "120" placeholder="Enter your age" class="inp"/></label>
+     </div>
+     <div class="dropdown">
+      <label id="technology" for="technology">Which of these technology are you currently learning?
+        <select id="dropdown" name="technology">
+        <option value="">Select one</option>
+        <option value="1">Full Stack development</option>
+        <option value="2">Dev Ops</option>
+        <option value="3">Data Structures and Algorithms</option>
+        <option value="4">Machine Learning</option>
+        </select>
+      </label>
+      </div>
+      <div class="radio">
+      <legend>Professional Experience: </legend>
+      <label for="fresher"><input id="fresher" class="inline" value="fresher" type = "radio" name = "exp">Fresher</label>
+      <label for="mid-level"><input id="mid-level" class="inline" value="midelevel" type = "radio" name = "exp">Mid-level</label>
+      <label for="Senior-level"><input id="senior-level" class="inline" value="seniorlevel" type = "radio" name = "exp">Senior-level</label>
+     </div>
+     <div class="check">
+       <legend>Which of these technology are you planning to study?</legend>
+       <label for="SpringBoot"><input id="SpringBoot" class="inline" type="checkbox" value="SpringBoot">SpringBoot</label>
+       <label for="Angular"><input id="Angular" class="inline" value="Angular" type="checkbox">AngularJS</label>
+       <label for="react"><input id="react" class="inline" value="react" type="checkbox">React</label>
+       <label for="datastructure"><input id="datastructure" class="inline" type="checkbox" value="datastructure">Data Structure and Algorithms</label>
+       <label for="Nodejs"><input id="Nodejs" class="inline" type="checkbox" value="Nodejs">NodeJS</label>
+       <label for="devops"><input id="devops" class="inline" type="checkbox" value="devops">DevOps</label>
+       <label for="Python"><input id="Python" class="inline" type="checkbox" value="Python">Python</label>
+     </div>
+     <label for="comments">How is your self study going?
+       <textarea id="comments" name="comments" rows="5" cols="30" placeholder="It is a rollercoatser" class="inp"></textarea>
+       </label>
+       <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
